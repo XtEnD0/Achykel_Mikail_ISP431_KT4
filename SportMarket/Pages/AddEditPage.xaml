@@ -1,0 +1,34 @@
+﻿<Page x:Class="SportMarket.Pages.AddEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SportMarket.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1000"
+      Title="AddEditPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="BackButton" Click="BackButton_Click" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+                Height="25" Width="100" Content="Назад"></Button>
+            <!--
+    Фамилия;
+•	Имя;
+•	Отчество;
+•	Должность (выбор из выпадающего списка);
+•	Дата рождения;
+•	Телефон в формате +7(999) - 099-90-90;
+•	Пол (выбор из выпадающего списка);
+•	Email (должен быть уникальным);
+•	Логин (должен быть уникальным);
+•	Пароль;
+•	Подтверждение пароля-->
+
+        
+    </Grid>
+</Page>
