@@ -13,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SportInventory
+namespace SportInventory.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ListViewPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ListViewPage : Page
     {
-        public MainWindow()
+        public ListViewPage()
         {
             InitializeComponent();
-            Classes.Manager.MainFrame = MainFrame;
-            Classes.Manager.MainFrame.Navigate(new Pages.ListViewPage());
         }
     }
 }

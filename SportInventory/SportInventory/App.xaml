@@ -4,6 +4,9 @@
              xmlns:local="clr-namespace:SportInventory"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="25"></Setter>
+        </Style>
     </Application.Resources>
 </Application>
