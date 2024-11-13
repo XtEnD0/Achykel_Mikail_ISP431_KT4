@@ -29,5 +29,54 @@ namespace SportMarket.Pages
         {
             Classes.Manager.MainFrame.Navigate(new Pages.ListViewPage());
         }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                StringBuilder errors = new StringBuilder();
+                if (String.IsNullOrEmpty(NameTextBox.Text))
+                {
+                    errors.AppendLine("Введите ФИО");
+                }
+                if (String.IsNullOrEmpty(EmailTextBox.Text))
+                {
+                    errors.AppendLine("Введите Email");
+                }
+                if (String.IsNullOrEmpty(PasswordTextBox.Text))
+                {
+                    errors.AppendLine("Введите Пароль");
+                }
+                if (String.IsNullOrEmpty(PhoneTextBox.Text))
+                {
+                    errors.AppendLine("Введите Номер Телефона");
+                }
+                if (String.IsNullOrEmpty(BirthDateTextBox.Text))
+                {
+                    errors.AppendLine("Введите Дату рождения");
+                }
+                if (PasswordTextBox.Text != Password2TextBox.Text)
+                {
+                    errors.AppendLine("Пароли не совпадают");
+                }
+
+
+
+
+
+
+
+
+                if (errors.Length > 0)
+                {
+                    MessageBox.Show(errors.ToString(), "Внимание!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else { MessageBox.Show("Спасибо за использование пробной версии!", "Благодарность!", MessageBoxButton.OK, MessageBoxImage.None); }
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+        }
     }
 }

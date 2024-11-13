@@ -16,6 +16,30 @@
         </Grid.RowDefinitions>
         <Button x:Name="BackButton" Click="BackButton_Click" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
                 Height="25" Width="100" Content="Назад"></Button>
+        <Button x:Name="SaveButton" Click="SaveButton_Click" Grid.Row="1" Margin="0,0,10,0"
+                VerticalAlignment="Center" HorizontalAlignment="Right"
+                Height="25" Width="100" Content="Сохранить"></Button>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Content="ФИО:" FontSize="15"></Label>
+            <TextBox x:Name="NameTextBox" Height="20"></TextBox>
+            <Label Content="Должность:" FontSize="15"></Label>
+            <ComboBox x:Name="RoleComboBox" Height="20"></ComboBox>
+            <Label Content="Дата Рождения:" FontSize="15"></Label>
+            <TextBox x:Name="BirthDateTextBox" Height="20"></TextBox>
+            <Label Content="Телефон:" FontSize="15"></Label>
+            <TextBox x:Name="PhoneTextBox" Height="20"></TextBox>
+            <Label Content="Пол:" FontSize="15"></Label>
+            <ComboBox x:Name="SexComboBox" Height="20"></ComboBox>
+            <Label Content="Email:" FontSize="15"></Label>
+            <TextBox x:Name="EmailTextBox" Height="20"></TextBox>
+            <Label Content="Пароль:" FontSize="15"></Label>
+            <TextBox x:Name="PasswordTextBox" Height="20"></TextBox>
+            <Label Content="Подтвердите Пароль:" FontSize="15"></Label>
+            <TextBox x:Name="Password2TextBox" Height="20"></TextBox>
+
+
+        </StackPanel>
             <!--
     Фамилия;
 •	Имя;
