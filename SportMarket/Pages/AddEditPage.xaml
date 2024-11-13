@@ -24,13 +24,20 @@
             <Label Content="ФИО:" FontSize="15"></Label>
             <TextBox x:Name="NameTextBox" Height="20"></TextBox>
             <Label Content="Должность:" FontSize="15"></Label>
-            <ComboBox x:Name="RoleComboBox" Height="20"></ComboBox>
+            <ComboBox x:Name="RoleComboBox" Height="20" HorizontalContentAlignment="Center">
+                <TextBlock Text="Администратор"></TextBlock>
+                <TextBlock Text="Исполнитель"></TextBlock>
+                <TextBlock Text="Менеджер"></TextBlock>
+            </ComboBox>
             <Label Content="Дата Рождения:" FontSize="15"></Label>
             <TextBox x:Name="BirthDateTextBox" Height="20"></TextBox>
             <Label Content="Телефон:" FontSize="15"></Label>
             <TextBox x:Name="PhoneTextBox" Height="20"></TextBox>
             <Label Content="Пол:" FontSize="15"></Label>
-            <ComboBox x:Name="SexComboBox" Height="20"></ComboBox>
+            <ComboBox x:Name="SexComboBox" Height="20"  HorizontalContentAlignment="Center">
+                <TextBlock Text="Мужской"></TextBlock>
+                <TextBlock Text="Женский"></TextBlock>
+            </ComboBox>
             <Label Content="Email:" FontSize="15"></Label>
             <TextBox x:Name="EmailTextBox" Height="20"></TextBox>
             <Label Content="Пароль:" FontSize="15"></Label>
